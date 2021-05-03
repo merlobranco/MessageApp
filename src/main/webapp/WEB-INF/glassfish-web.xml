@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glassfish-web-app PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Servlet 3.0//EN" "http://glassfish.org/dtds/glassfish-web-app_3_0-1.dtd">
+<glassfish-web-app error-url="">
+    <ejb-ref>
+        <ejb-ref-name>TestRemote</ejb-ref-name>
+        <!--<jndi-name>corbaname:iiop:192.168.88.216:3700#java:global/MessagePersistence/TestFacade!com.merlobranco.ejb.TestRemote</jndi-name>-->
+        <!--<jndi-name>corbaname:iiop:localhost:3700#java:global/MessageRepository/TestFacade!com.merlobranco.ejb.TestRemote</jndi-name>-->
+        <!--<jndi-name>corbaname:iiop:localhost:3700#com.merlobranco.ejb.TestRemote</jndi-name>-->
+        <jndi-name>corbaname:iiop:192.168.88.216:3700#com.merlobranco.ejb.TestRemote</jndi-name>
+    </ejb-ref>
+    <ejb-ref>
+        <ejb-ref-name>MessageRemote</ejb-ref-name>
+        <!--<jndi-name>corbaname:iiop:192.168.88.216:3700#java:global/MessagePersistence/MessageFacade!com.merlobranco.ejb.MessageRemote</jndi-name>-->
+        <!--<jndi-name>corbaname:iiop:localhost:3700#java:global/MessageRepository/MessageFacade!com.merlobranco.ejb.MessageRemote</jndi-name>-->
+        <!--<jndi-name>corbaname:iiop:localhost:3700#com.merlobranco.ejb.MessageRemote</jndi-name>-->
+        <jndi-name>corbaname:iiop:192.168.88.216:3700#com.merlobranco.ejb.MessageRemote</jndi-name>
+    </ejb-ref>
+    <property name="alternatedocroot_1" value="from=/css/* dir=/usr/java/"/>
+    <property name="alternatedocroot_2" value="from=/js/* dir=/usr/java/"/>
+    <property name="alternatedocroot_3" value="from=/defaultImages/* dir=/usr/java/"/>
+</glassfish-web-app>
