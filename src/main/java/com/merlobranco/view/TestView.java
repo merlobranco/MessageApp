@@ -30,9 +30,11 @@ public class TestView implements Serializable {
     
     private static final Logger LOG = Logger.getLogger(TestView.class.getName());
     
+//    @EJB
     @EJB(name="TestRemote")
     TestRemote testRemote;
     
+//    @EJB
     @EJB(name="MessageRemote")
     MessageRemote messageRemote;
     
