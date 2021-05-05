@@ -8,6 +8,8 @@ package com.merlobranco.view;
 import com.merlobranco.ejb.MessageRemote;
 import com.merlobranco.ejb.TestRemote;
 import com.merlobranco.entity.Message;
+import com.myPower24.ejbLib.entity.LoggerMyPower;
+import com.myPower24.ejbLib.logerRemote.LoggerMyPowerRemote;
 import java.io.Serializable;
 import java.util.List;
 import java.util.logging.Level;
@@ -38,6 +40,9 @@ public class TestView implements Serializable {
     @EJB(name="MessageRemote")
     MessageRemote messageRemote;
     
+    @EJB(name="LoggerMyPowerRemote")
+    LoggerMyPowerRemote loggerMyPowerRemote;
+    
     @Named("testSMS") 
     @Produces
     private String testSMS;
@@ -50,6 +55,10 @@ public class TestView implements Serializable {
     @Produces
     private List<Message> messages;
     
+    @Named("loggers")
+    @Produces
+    private List<LoggerMyPower> loggers;
+    
     @Named("counter") 
     @Produces
     private Integer counter;
@@ -58,6 +67,9 @@ public class TestView implements Serializable {
     @Produces
     private Long time;
 
+    public List<LoggerMyPower> getLoggers() {
+        return loggers;
+    }
 
     @PostConstruct
     public void init() {
@@ -70,6 +82,10 @@ public class TestView implements Serializable {
     
     public void testEJB() {
         testSMS = testRemote.method();
+    }
+    
+    public void trySometing(){
+        loggers = loggerMyPowerRemote.findAll();
     }
     
     public void createMessage() {

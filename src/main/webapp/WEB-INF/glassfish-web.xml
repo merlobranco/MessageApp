@@ -13,6 +13,12 @@
         <!--<jndi-name>corbaname:iiop:192.168.88.13:3700#java:global/MessageRepository/TestFacade!com.merlobranco.ejb.TestRemote</jndi-name>-->
         <!--<jndi-name>corbaname:iiop:192.168.88.13:3700#java:global/MessageRepository/TestFacade</jndi-name>-->
     </ejb-ref>
+    <ejb-ref>
+        <ejb-ref-name>LoggerMyPowerRemote</ejb-ref-name>
+        <jndi-name>corbaname:iiop:192.168.88.13:3700#com.myPower24.ejbLib.logerRemote.LoggerMyPowerRemote</jndi-name>
+        <!--<jndi-name>corbaname:iiop:192.168.88.13:3700#java:global/MessageRepository/TestFacade!com.merlobranco.ejb.TestRemote</jndi-name>-->
+        <!--<jndi-name>corbaname:iiop:192.168.88.13:3700#java:global/MessageRepository/TestFacade</jndi-name>-->
+    </ejb-ref>
     <property name="alternatedocroot_1" value="from=/css/* dir=/usr/java/"/>
     <property name="alternatedocroot_2" value="from=/js/* dir=/usr/java/"/>
     <property name="alternatedocroot_3" value="from=/defaultImages/* dir=/usr/java/"/>

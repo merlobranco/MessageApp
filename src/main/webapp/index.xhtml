@@ -52,6 +52,21 @@
                         </div>
                     </div>
                 </div>
+                <div class="card border-danger my-4">
+                    <div class="card-header text-white bg-danger">
+                        <h3>Try Something</h3>
+                    </div>
+                    <div class="card-body">
+                        <ui:repeat class="list-group list-group-flush" var="logger" value="#{testView.loggers}">
+                            <li class="list-group-item">#{logger.serNum} - #{logger.installDate}</li>
+                        </ui:repeat>
+                        <br/>
+                        <div>
+                            <label for="counter">Here is button:</label>
+                            <h:commandButton value="Run test" actionListener="#{testView.trySometing}" class="btn btn-danger mx-2"></h:commandButton>
+                        </div>
+                    </div>
+                </div>
             </h:form>
         </div>
     </h:body>
