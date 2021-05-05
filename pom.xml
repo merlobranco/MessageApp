@@ -24,6 +24,12 @@
             <type>jar</type>
         </dependency>
         <dependency>
+            <groupId>com.myPower24</groupId>
+            <artifactId>myPower24-CommonLib</artifactId>
+            <version>1.0.6</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-api</artifactId>
             <version>${jakartaee}</version>
