@@ -84,7 +84,7 @@ public class TestView implements Serializable {
         testSMS = testRemote.method();
     }
     
-    public void trySometing(){
+    public void displayLoggers(){
         loggers = loggerMyPowerRemote.findAll();
     }
     

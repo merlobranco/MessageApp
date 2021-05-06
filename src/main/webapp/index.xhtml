@@ -54,7 +54,7 @@
                 </div>
                 <div class="card border-danger my-4">
                     <div class="card-header text-white bg-danger">
-                        <h3>Try Something</h3>
+                        <h3>Loggers</h3>
                     </div>
                     <div class="card-body">
                         <ui:repeat class="list-group list-group-flush" var="logger" value="#{testView.loggers}">
@@ -62,8 +62,7 @@
                         </ui:repeat>
                         <br/>
                         <div>
-                            <label for="counter">Here is button:</label>
-                            <h:commandButton value="Run test" actionListener="#{testView.trySometing}" class="btn btn-danger mx-2"></h:commandButton>
+                            <h:commandButton value="Get Loggers" actionListener="#{testView.displayLoggers}" class="btn btn-danger mx-2"></h:commandButton>
                         </div>
                     </div>
                 </div>
